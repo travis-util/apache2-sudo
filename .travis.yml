@@ -1,0 +1,18 @@
+sudo: true
+
+# addons:
+  # apt:
+    # packages:
+    # - apache2
+    # - elinks
+
+
+before_install:
+- sudo apt install aptitude
+- sudo aptitude install apache2
+- sudo aptitude install elinks
+
+
+script:
+- service apache2 status
+- elinks -dump-color-mode 4 -dump http://localhost:80
