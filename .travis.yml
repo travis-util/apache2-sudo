@@ -10,8 +10,8 @@ sudo: true
 before_install:
 # - sudo apt install aptitude # already installed
 - sudo aptitude update -Z
-# - sudo aptitude safe-upgrade -Z
-- sudo aptitude install elinks --assume-yes
+- sudo aptitude safe-upgrade -Z --assume-yes
+# - sudo aptitude install elinks --assume-yes
 - sudo aptitude install apache2 --assume-yes
 
 
