@@ -19,3 +19,10 @@ before_install:
 script:
 - service apache2 status
 - links2 -g -dump http://localhost:80
+
+
+after_script:
+- ls -l --color /var/www
+- ls -dl --color /var/www/html
+- ls --color /var/www/html
+- zcat /usr/share/doc/apache2/README.Debian.gz
