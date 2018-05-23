@@ -11,10 +11,10 @@ before_install:
 # - sudo apt install aptitude # already installed
 - sudo aptitude update -Z
 # - sudo aptitude safe-upgrade -Z
-# - sudo aptitude install elinks --assume-yes
+- sudo aptitude install elinks --assume-yes
 - sudo aptitude install apache2 --assume-yes
 
 
 script:
 - service apache2 status
-# - elinks -dump-color-mode 4 -dump http://localhost:80
+- elinks -dump-color-mode 4 -dump http://localhost:80
