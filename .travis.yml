@@ -9,7 +9,7 @@ sudo: true
 
 before_install:
 # - sudo apt install aptitude # already installed
-# - sudo aptitude update -Z
+- sudo aptitude update -Z
 # - sudo aptitude safe-upgrade -Z
 - sudo aptitude install apache2 --assume-yes
 - sudo aptitude install elinks --assume-yes
