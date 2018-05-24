@@ -13,12 +13,12 @@ before_install:
 # - sudo aptitude safe-upgrade -Z --assume-yes
 # - sudo aptitude install elinks --assume-yes # Does not work.
 - sudo aptitude install apache2 -Z --assume-yes
-- sudo aptitude install links2 -Z --assume-yes
+- sudo aptitude install links -Z --assume-yes
 
 
 script:
 - service apache2 status
-- env XTERM_VERSION="XTerm(324)" links2 -g -dump http://localhost:80
+- links -dump http://localhost:80
 
 
 after_script:
