@@ -13,6 +13,8 @@ before_install:
 # - sudo aptitude safe-upgrade -Z --assume-yes
 # - sudo aptitude install elinks --assume-yes # Does not work.
 - sudo aptitude install apache2 -Z --assume-yes
+- sudo aptitude install apache2-suexec-pristine -Z --assume-yes
+- sudo aptitude install libapache2-mod-fcgid -Z --assume-yes
 - sudo aptitude install links -Z --assume-yes
 
 
