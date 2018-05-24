@@ -18,7 +18,7 @@ before_install:
 
 script:
 - service apache2 status
-- links2 -g -dump http://localhost:80
+- env XTERM_VERSION="XTerm(324)" links2 -g -dump http://localhost:80
 
 
 after_script:
